@@ -84,6 +84,11 @@ class MyGame extends Phaser.Scene {
     this.score += 10;
     this.scoreText.setText('Score: ' + this.score);
 
+    if (this.score >= 100) {
+      alert('YOU WIN!');
+      location.reload();
+    }
+
     const x =
       this.turtle.x < 400
         ? Phaser.Math.Between(400, 800)
