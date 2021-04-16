@@ -85,8 +85,7 @@ class MyGame extends Phaser.Scene {
     this.scoreText.setText('Score: ' + this.score);
 
     if (this.score >= 100) {
-      alert('YOU WIN!');
-      location.reload();
+      alert('YOU WIN! Refresh to restart');
     }
 
     const x =
